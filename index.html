@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedido de Productos Naturales</title>
+</head>
+<body>
+  <h2>Haz tu pedido</h2>
+  <form action="https://TU_N8N_URL/webhook/pedido-productos" method="POST">
+    <label>Nombre:</label><br>
+    <input type="text" name="nombre" required><br><br>
+
+    <label>Producto:</label><br>
+    <select name="producto">
+      <option>Crema de aloe vera</option>
+      <option>Jabón de carbón</option>
+      <option>Aceite de lavanda</option>
+    </select><br><br>
+
+    <label>Ciudad:</label><br>
+    <input type="text" name="ciudad" required><br><br>
+
+    <label>Método de pago:</label><br>
+    <select name="pago">
+      <option>Nequi</option>
+      <option>Daviplata</option>
+      <option>Bancolombia</option>
+    </select><br><br>
+
+    <label>WhatsApp:</label><br>
+    <input type="text" name="telefono" required><br><br>
+
+    <button type="submit">Hacer pedido</button>
+  </form>
+</body>
+</html>
